@@ -1,18 +1,16 @@
 #include <iostream>
 using namespace std;
-int main(){
-	int arr[101];
-	int N, M;
-	cin >> N >> M;
-		while(M--){
-			int i, j, k;
-			cin >> i >> j >> k;
-			for(int o = i; o < j; o++){
-				k = arr[o];
-			}
-		}
-			for(int i = 1; i <= N; i++){
-				cout << arr[i] << " ";
-			}
-	return 0;
+int a[101];
+int n, m;
+int main() {
+    cin >> n >> m;
+    while(m--)
+    {
+        int i, j, k;
+        cin >> i >> j >> k;
+        for (int o = i; o <= j; o++)
+            a[o] = k;
+    }
+    for (int i = 1; i <= n; i++)
+        cout << a[i] << ' ';
 }
